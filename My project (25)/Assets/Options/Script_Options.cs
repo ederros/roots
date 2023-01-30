@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Script_Options : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // VOLUME
+    //Toggle_Sounds
+    //если (Is On == true) тогда звуки вкл, в ином случае звуки откл
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //Toggle_Music
+    //если (Is On == true) тогда музыку вкл, в ином случае музыку откл
+
+    //Slider
+    //
 }
