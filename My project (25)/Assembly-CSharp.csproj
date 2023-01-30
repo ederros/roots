@@ -53,8 +53,17 @@
     <UnityVersion>2020.3.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\roots\spawner_hider.cs" />
+    <Compile Include="Assets\roots\spawner_controller.cs" />
+    <Compile Include="Assets\roots\Hower_OverScale.cs" />
     <Compile Include="Assets\camera\camera_controller.cs" />
+    <Compile Include="Assets\UI\UI_Listener.cs" />
     <Compile Include="Assets\roots\spawn_point_generator.cs" />
+    <Compile Include="Assets\roots\root_controller.cs" />
+    <Compile Include="Assets\UI\scrollbar_controller.cs" />
+    <Compile Include="Assets\core\core_controller.cs" />
+    <Compile Include="Assets\UI\button_controller.cs" />
+    <Compile Include="Assets\core\tree_statics.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

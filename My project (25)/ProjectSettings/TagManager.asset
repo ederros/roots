@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: spawners
+    uniqueID: 1885101551
+    locked: 0

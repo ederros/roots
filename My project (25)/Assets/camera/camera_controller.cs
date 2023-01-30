@@ -17,12 +17,14 @@ public class camera_controller : MonoBehaviour
     {
         if (Input.GetMouseButton(2))
         {
-            transform.position += new Vector3(-Input.GetAxisRaw("Mouse X"), -Input.GetAxisRaw("Mouse Y"))*Time.deltaTime*50;
+            transform.position += new Vector3(-Input.GetAxis("Mouse X"), -Input.GetAxis("Mouse Y"))*Time.deltaTime*5*camMoveSpeed*Camera.main.orthographicSize;
         }
+        Vector2 XY_move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        transform.position += (Vector3)XY_move * Time.deltaTime * camMoveSpeed;
+        if (UI_Listener.isUIOverride) return;
         Camera.main.orthographicSize -= Input.mouseScrollDelta.y* Camera.main.orthographicSize * Time.deltaTime*wheelSpeed;
         if (Camera.main.orthographicSize < minSize) Camera.main.orthographicSize = minSize;
         if (Camera.main.orthographicSize > maxSize) Camera.main.orthographicSize = maxSize;
-        Vector2 XY_move = new Vector2(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"));
-        transform.position += (Vector3)XY_move * Time.deltaTime* camMoveSpeed;
+        
     }
 }
