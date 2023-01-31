@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class spawner_controller : MonoBehaviour
 {
+    
     public bool build_building(int index)
     {
         GameObject new_Root = Instantiate(statics.Tree.builds[index], transform.parent);
@@ -21,11 +22,19 @@ public class spawner_controller : MonoBehaviour
        
         foreach (var hit in r_hit)
         {
+            bool is_ignore = false;
+            foreach (string s in statics.Tree.root_tags_ignore)
+            {
+                if (hit.collider.tag == s)
+                {
+                    is_ignore = true;
+                    break;
+                }
+            }
+            if (is_ignore) continue;
             if (hit.collider.gameObject == transform.gameObject) continue;
             if (hit.collider.gameObject == transform.parent.gameObject) continue;
             if (transform.parent.parent != null && hit.collider.gameObject == transform.parent.parent.gameObject) continue;
-            
-            
             return false;
         }
         GameObject new_Root = Instantiate(statics.Tree.roots_prefab[Random.Range(0,statics.Tree.roots_prefab.Count)],transform.parent);
@@ -37,8 +46,6 @@ public class spawner_controller : MonoBehaviour
         statics.build_spawn_menu.SetActive(false);
 
         Destroy(gameObject);
-        
-
         return true;
     }
     private void Awake()

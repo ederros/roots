@@ -7,6 +7,7 @@ public class spawner_hider : MonoBehaviour
     public List<GameObject> spawners = new List<GameObject>();
     bool is_spawn_active = false;
     public bool is_blocked = true;
+    public ContactFilter2D filter;
     void Start()
     {
         for (int i = 0; i < transform.childCount; i++)
@@ -31,9 +32,30 @@ public class spawner_hider : MonoBehaviour
         }
         is_spawn_active = value;
     }
+
+    
     void activate()
     {
+
         is_blocked = false;
+        if (gameObject.name.Contains("root"))
+        {
+            statics.Tree.core.water.max += 2;
+            List<Collider2D> res = new List<Collider2D>();
+            Physics2D.OverlapCollider(gameObject.GetComponent<BoxCollider2D>(),filter,res);
+            foreach(var r in res)
+            {
+                if (r.tag.Contains("fluid"))
+                {
+                    r.gameObject.GetComponent<fluid_controller>().harvest_per_second += 1;
+                }
+            }
+        }
+        if (gameObject.name.Contains("storage"))
+        {
+            statics.Tree.core.water.max += 20;
+        }
+        statics.Tree.show_vals();
     }
     private void OnMouseDown()
     {

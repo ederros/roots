@@ -186,6 +186,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawners: []
   is_blocked: 1
+  filter:
+    useTriggers: 1
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!95 &6972756925172623019
 Animator:
   serializedVersion: 3
