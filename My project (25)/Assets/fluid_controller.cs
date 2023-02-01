@@ -5,9 +5,10 @@ using UnityEngine;
 public class fluid_controller : MonoBehaviour
 {
     public float resources = 100;
+    float max_res;
     public float harvest_per_second = 0;
-    public float tick = 0.5f;
     public fluid_type type;
+    Color clr;
     public enum fluid_type
     {
         water,
@@ -17,6 +18,8 @@ public class fluid_controller : MonoBehaviour
     value res;
     void Start()
     {
+        clr = transform.Find("body").GetComponent<SpriteRenderer>().color;
+        max_res = resources;
         switch (type)
         {
             case fluid_type.water:
@@ -31,11 +34,11 @@ public class fluid_controller : MonoBehaviour
     void Update()
     {
         if (harvest_per_second <= 0) return;
-        float cur_harvest = harvest_per_second * tick;
+        float cur_harvest = harvest_per_second * statics.Tree.tick;
         delta += Time.deltaTime;
-        if (delta >= tick)
+        if (delta >= statics.Tree.tick)
         {
-            delta = tick - delta;
+            delta = statics.Tree.tick - delta;
             if (resources < cur_harvest) cur_harvest = resources;
             resources -= cur_harvest;
             float har_val = res.add(cur_harvest);
@@ -43,10 +46,12 @@ public class fluid_controller : MonoBehaviour
             {
                 resources -= har_val;
             }
+
             if (resources == 0)
             {
                 Destroy(gameObject);
             }
+            transform.Find("body").GetComponent<SpriteRenderer>().color = new Color(clr.r,clr.g,clr.b,resources/max_res);
         }
     }
 }

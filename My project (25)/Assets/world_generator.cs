@@ -12,7 +12,8 @@ public class world_generator : MonoBehaviour
     public int kol = 1;
     public bool generate_object()
     {
-        Vector2 pos = random_in_circle(min_spawn_dist,max_spawn_dist);
+        Vector3 pos = random_in_circle(min_spawn_dist,max_spawn_dist);
+        pos.z = 1;
         GameObject obj = objects[Random.Range(0, objects.Count)];
         float radius = obj.GetComponent<object_controller>().radius;
         if (Physics2D.OverlapCircle(pos, radius) != null) return false;

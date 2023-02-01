@@ -53,7 +53,8 @@ public class spawner_hider : MonoBehaviour
         }
         if (gameObject.name.Contains("storage"))
         {
-            statics.Tree.core.water.max += 20;
+            statics.Tree.core.water.max += GetComponent<storage_controller>().capacity;
+            statics.Tree.water_storages.Add(GetComponent<storage_controller>());
         }
         statics.Tree.show_vals();
     }

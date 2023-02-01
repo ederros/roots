@@ -10,11 +10,12 @@ public class value
     public Text text;
     public float add(float val)
     {
+        float ret = max - cur - val;
         cur += val;
         if (cur > max) cur = max;
         if (bar != null) bar.value = cur / max;
         if (text != null) text.text = cur + "/" + max;
-        return max - cur - val;
+        return ret;
         
     }
     public bool sub(float val)
