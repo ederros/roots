@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 Base path: 'C:/Program Files/Unity/Hub/Editor/2020.3.42f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.3.42f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+=======
+Base path: 'C:/Unity/Editor/Data', plugins path 'C:/Unity/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+Cmd: shutdown
+>>>>>>> GameBars

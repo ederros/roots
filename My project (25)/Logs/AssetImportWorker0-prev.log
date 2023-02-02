@@ -1,16 +1,26 @@
 Using pre-set license
+<<<<<<< HEAD
 Built from '2020.3/staging' branch; Version is '2020.3.42f1 (7ade1201f527) revision 8052242'; Using compiler version '192528614'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19041) 64bit CoreSingleLanguage' Language: 'ru' Physical Memory: 14213 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\2020.3.42f1\Editor\Unity.exe
+=======
+Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Enterprise LTSC 2019; OS build 17763.1217; Version 1809; 64bit' Language: 'ru' Physical Memory: 8042 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Unity\Editor\Unity.exe
+>>>>>>> GameBars
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 C:/Users/hp/Documents/GitHub/roots/My project (25)
 -logFile
 Logs/AssetImportWorker0.log
@@ -48,11 +58,51 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1346ms)
 		BeginReloadAssembly (287ms)
+=======
+C:/Unity/roots/My project (25)
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50505
+Successfully changed project path to: C:/Unity/roots/My project (25)
+C:/Unity/roots/My project (25)
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 75.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path C:/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Unity/roots/My project (25)/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 520M                  (ID=0x1050)
+    Vendor:   
+    VRAM:     978 MB
+    Driver:   10.18.13.6472
+Initialize mono
+Mono path[0] = 'C:/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001946 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 74.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.525 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1525ms)
+		BeginReloadAssembly (79ms)
+>>>>>>> GameBars
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (878ms)
 			LoadAssemblies (274ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -67,12 +117,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (33ms)
 				ProcessInitializeOnLoadAttributes (139ms)
 				ProcessInitializeOnLoadMethodAttributes (48ms)
+=======
+		EndReloadAssembly (681ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (243ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (274ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (132ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+>>>>>>> GameBars
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.014277 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -118,6 +185,53 @@ System memory in use after: 85.3 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2290.
 Total: 3.600400 ms (FindLiveObjects: 0.195800 ms CreateObjectMapping: 0.047600 ms MarkObjects: 3.260800 ms  DeleteObjects: 0.095000 ms)
+=======
+Registered in 0.003962 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 74.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.860 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1861ms)
+		BeginReloadAssembly (229ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1537ms)
+			LoadAssemblies (133ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (473ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (618ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (404ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2143 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 96.3 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2583.
+Total: 5.075800 ms (FindLiveObjects: 0.244700 ms CreateObjectMapping: 0.112400 ms MarkObjects: 4.599500 ms  DeleteObjects: 0.116700 ms)
+>>>>>>> GameBars
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,6 +245,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   path: Assets/objects/Stone Variant.prefab
   artifactKey: Guid(0a14885d6ca6cb549b668680530f6683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/objects/Stone Variant.prefab using Guid(0a14885d6ca6cb549b668680530f6683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60a6c4e2d72832a6f6ddb21ed84104c') in 0.185687 seconds 
@@ -10581,3 +10696,43 @@ C:\Windows\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFB8D1C0000), size: 1982464 (r
 
 A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
  * C:/Users/hp/AppData/Local/Temp/Unity/Editor/Crashes
+=======
+  path: Assets/UI
+  artifactKey: Guid(a770dceaaf187304cbc72dbae2fdec81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI using Guid(a770dceaaf187304cbc72dbae2fdec81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016cad82ffedc9c2d93272fa42705723') in 0.033927 seconds 
+  Import took 0.038391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.716775 seconds.
+  path: Assets/Sprites
+  artifactKey: Guid(08b616483815cdb4b8ca161bef179e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites using Guid(08b616483815cdb4b8ca161bef179e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '181c6fc13b1fd4971e7466b4f4366605') in 0.002806 seconds 
+  Import took 0.008867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.073181 seconds.
+  path: Assets/Sprites/Bar.png
+  artifactKey: Guid(91da4b327ca3874459d2f8ae191a660b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Bar.png using Guid(91da4b327ca3874459d2f8ae191a660b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1cf0ea3690581351ab09df106dfdce') in 0.152134 seconds 
+  Import took 0.157103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Sprites/water_ico.png
+  artifactKey: Guid(d4bb7b905596654428177b268c174eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/water_ico.png using Guid(d4bb7b905596654428177b268c174eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa01c29210ea32fea3b2ad5a1e93fcf1') in 0.026095 seconds 
+  Import took 0.047541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.789195 seconds.
+  path: Assets/roots
+  artifactKey: Guid(e28cce5fc42ce82438d68caeafa3ac8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/roots using Guid(e28cce5fc42ce82438d68caeafa3ac8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357b564768cffbd1ff90d0d241cd7f8b') in 0.002762 seconds 
+  Import took 0.010322 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+>>>>>>> GameBars
