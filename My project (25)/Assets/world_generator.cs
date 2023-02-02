@@ -6,7 +6,7 @@ public class world_generator : MonoBehaviour
 {
     public float min_spawn_dist,
                  max_spawn_dist;
-    
+    public Transform objects_parent;
     public List<GameObject> objects = new List<GameObject>();
 
     public int kol = 1;
@@ -17,7 +17,7 @@ public class world_generator : MonoBehaviour
         GameObject obj = objects[Random.Range(0, objects.Count)];
         float radius = obj.GetComponent<object_controller>().radius;
         if (Physics2D.OverlapCircle(pos, radius) != null) return false;
-        Instantiate(obj,pos,Quaternion.Euler(0,0,Random.Range(0,360)));
+        Instantiate(obj,pos,Quaternion.Euler(0,0,Random.Range(0,360)),objects_parent);
         return true;
     }
 

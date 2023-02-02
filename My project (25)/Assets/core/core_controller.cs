@@ -38,7 +38,7 @@ public class core_controller : MonoBehaviour
 {
     public value hp = new value(0,100);
     public value water = new value(0, 100);
-    public value nutritions = new value(0, 100);
+    public value nutritions = new value(50, 100);
     public value minerals = new value(0, 100);
     private void Awake()
     {

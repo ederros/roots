@@ -12,7 +12,8 @@ public class fluid_controller : MonoBehaviour
     public enum fluid_type
     {
         water,
-
+        minerals,
+        nutriens,
     }
     float delta = 0;
     value res;
@@ -25,6 +26,13 @@ public class fluid_controller : MonoBehaviour
             case fluid_type.water:
                 res = statics.Tree.core.water;
                 break;
+            case fluid_type.minerals:
+                res = statics.Tree.core.minerals;
+                break;
+            case fluid_type.nutriens:
+                res = statics.Tree.core.nutritions;
+                break;
+
             default:
                 Debug.LogError("unknown type using");
                 break;

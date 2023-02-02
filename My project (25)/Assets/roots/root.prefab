@@ -200,6 +200,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  cost: 2.5
 --- !u!95 &6972756925172623019
 Animator:
   serializedVersion: 3
