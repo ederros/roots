@@ -64,6 +64,10 @@ public class bug_controller : MonoBehaviour
     {
         Gizmos.DrawLine(transform.position, transform.position+ transform.up* attack_distance);
     }
+    void ap_quit()
+    {
+        Application.Quit();
+    }
     void attack()
     {
         RaycastHit2D r_hit = Physics2D.Raycast(transform.position, transform.up,attack_distance,attack_filter);
@@ -71,7 +75,13 @@ public class bug_controller : MonoBehaviour
         target = r_hit.collider.transform;
         if (target.name == "tree")
         {
-            if(statics.Tree.core.hp.sub(attack_damage));
+            if (statics.Tree.core.hp.sub(attack_damage))
+            {
+                Destroy(statics.Tree.core.gameObject);
+                statics.Tree.game_over.SetActive(true);
+                Invoke("ap_quit", 5);
+                
+            }
         }
         else if (target.name.Contains("spine"))
         {

@@ -33,6 +33,7 @@ public class tree_statics : MonoBehaviour
     public Animator build_anim;
     public float tick = 0.5f;
     public float delta = 0;
+    public GameObject game_over;
 
     public void show_vals()
     {
