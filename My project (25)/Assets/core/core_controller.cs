@@ -36,7 +36,7 @@ public class value
 
 public class core_controller : MonoBehaviour
 {
-    public value hp = new value(0,100);
+    public value hp = new value(100,100);
     public value water = new value(0, 100);
     public value nutritions = new value(50, 100);
     public value minerals = new value(0, 100);

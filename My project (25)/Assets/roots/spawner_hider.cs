@@ -11,6 +11,7 @@ public class spawner_hider : MonoBehaviour
     Vector2 box_pos, box_size;
     public float cost;
     float box_angle;
+    public float hp = 5;
     void Start()
     {
         for (int i = 0; i < transform.childCount; i++)

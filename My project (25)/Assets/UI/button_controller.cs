@@ -35,9 +35,8 @@ public class button_controller : MonoBehaviour
     }
     public bool build_building(int build_id)
     {
-
         scrollbar_controller sc = statics.Tree.build_spawn_menu.transform.GetChild(0).GetComponent<scrollbar_controller>();
-        GameObject temp = sc.target.build_building(build_id);
+        GameObject temp = sc.target.build_building(build_id, build_id == 1 ? -1 : 1);
         if (!before_build(temp, sc)) return false;
         return true;
     }
@@ -53,16 +52,25 @@ public class button_controller : MonoBehaviour
     {
         build_building(2);
     }
+    public void click_to_spine()
+    {
+        build_building(3);
+    }
+    public static void destroy(GameObject target)
+    {
+        
+        GameObject G_obj = Instantiate(statics.Tree.spawner_prefab, target.transform.parent);
+        G_obj.transform.position = target.transform.position;
+        G_obj.transform.rotation = target.transform.rotation;
+        target.transform.parent.GetComponent<spawner_hider>().spawners.Add(G_obj);
+        G_obj.SetActive(false);
+        statics.Tree.build_action_menu.SetActive(false);
+        Destroy(target);
+    }
     public void click_to_destroy()
     {
         scrollbar_controller sc = statics.Tree.build_action_menu.transform.GetChild(0).GetComponent<scrollbar_controller>();
-        GameObject G_obj = Instantiate(statics.Tree.spawner_prefab, sc.gameobj_target.transform.parent);
-        G_obj.transform.position = sc.gameobj_target.transform.position;
-        G_obj.transform.rotation = sc.gameobj_target.transform.rotation;
-        sc.gameobj_target.transform.parent.GetComponent<spawner_hider>().spawners.Add(G_obj);
-        G_obj.SetActive(false);
-        statics.Tree.build_action_menu.SetActive(false);
-        Destroy(sc.gameobj_target);
+        destroy(sc.gameobj_target);
     }
     // Update is called once per frame
     void Update()

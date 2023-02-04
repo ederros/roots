@@ -7,11 +7,13 @@ TagManager:
   - rootable
   - fluid
   - storage
+  - bug
+  - root
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - tree
   - Water
   - UI
   - 

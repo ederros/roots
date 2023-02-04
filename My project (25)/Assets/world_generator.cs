@@ -5,11 +5,20 @@ using UnityEngine;
 public class world_generator : MonoBehaviour
 {
     public float min_spawn_dist,
-                 max_spawn_dist;
+                 max_spawn_dist,
+                 bug_spawn_dist;
     public Transform objects_parent;
+    public Transform bugs_parent;
     public List<GameObject> objects = new List<GameObject>();
+    public List<GameObject> bugs = new List<GameObject>();
 
-    public int kol = 1;
+    public int obj_kol = 1,
+               bug_kol = 2;
+
+    private void Awake()
+    {
+        
+    }
     public bool generate_object()
     {
         Vector3 pos = random_in_circle(min_spawn_dist,max_spawn_dist);
@@ -21,6 +30,16 @@ public class world_generator : MonoBehaviour
         return true;
     }
 
+    public bool generate_bug()
+    {
+        Vector3 pos = random_in_circle(bug_spawn_dist, max_spawn_dist);
+        GameObject obj = bugs[Random.Range(0, bugs.Count)];
+        float radius = 1;
+        obj.transform.Find("body");
+        if (Physics2D.OverlapCircle(pos, radius) != null) return false;
+        Instantiate(obj, pos, Quaternion.Euler(0, 0, Random.Range(0, 360)), bugs_parent);
+        return true;
+    }
     void Start()
     {
         generate_world();
@@ -38,9 +57,13 @@ public class world_generator : MonoBehaviour
 
     void generate_world()
     {
-        for (int i = 0;i<kol;i++)
+        for (int i = 0;i<obj_kol;i++)
         {
             generate_object();
+        }
+        for (int i = 0; i < bug_kol; i++)
+        {
+            generate_bug();
         }
     }
     // Update is called once per frame

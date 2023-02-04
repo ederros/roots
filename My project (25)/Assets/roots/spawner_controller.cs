@@ -5,11 +5,11 @@ using UnityEngine.UI;
 public class spawner_controller : MonoBehaviour
 {
     public Transform parent;
-    public GameObject build_building(int index)
+    public GameObject build_building(int index, int order_add)
     {
         GameObject new_Root = statics.Tree.builds[index];
         new_Root.transform.position = (Vector2)transform.position;
-        new_Root.transform.Find("body").GetComponent<SpriteRenderer>().sortingOrder = transform.parent.Find("body").GetComponent<SpriteRenderer>().sortingOrder + 1;
+        new_Root.transform.Find("body").GetComponent<SpriteRenderer>().sortingOrder = transform.parent.Find("body").GetComponent<SpriteRenderer>().sortingOrder + order_add;
         if (Random.value > 0.5) new_Root.transform.localScale = new Vector3(-new_Root.transform.localScale.x, new_Root.transform.localScale.y, new_Root.transform.localScale.z);
         new_Root.transform.localRotation = transform.localRotation;
         statics.Tree.build_spawn_menu.SetActive(false);

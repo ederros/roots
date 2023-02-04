@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6594634203649378171}
   - component: {fileID: 3225379248229879611}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,9 +96,9 @@ GameObject:
   - component: {fileID: 2871015006920622739}
   - component: {fileID: 5702918132388900587}
   - component: {fileID: 6972756925172623019}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: root
-  m_TagString: Untagged
+  m_TagString: root
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -140,7 +140,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0065345243, y: 0.5602279}

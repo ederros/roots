@@ -22,8 +22,15 @@ public class tree_statics : MonoBehaviour
     public Text water;
     public Text minerals;
     public Text nutritions;
+    public Text hp;
+    public Slider bar_water;
+    public Slider bar_minerals;
+    public Slider bar_nutritions;
+    public Slider bar_hp;
     public List<GameObject> builds;
     public GameObject spawner_prefab;
+    public float build_time;
+    public Animator build_anim;
     public float tick = 0.5f;
     public float delta = 0;
 
@@ -32,13 +39,20 @@ public class tree_statics : MonoBehaviour
         statics.Tree.core.water.add(0);
         statics.Tree.core.minerals.add(0);
         statics.Tree.core.nutritions.add(0);
+        statics.Tree.core.hp.add(0);
     }
     private void Awake()
     {
+        //build_anim.speed = 1 / build_time;
         statics.Tree = this;
         statics.Tree.core.water.text = water;
         statics.Tree.core.minerals.text = minerals;
         statics.Tree.core.nutritions.text = nutritions;
+        statics.Tree.core.hp.text = hp;
+        statics.Tree.core.water.bar = bar_water;
+        statics.Tree.core.minerals.bar = bar_minerals;
+        statics.Tree.core.nutritions.bar = bar_nutritions;
+        statics.Tree.core.hp.bar = bar_hp;
         show_vals();
     }
     private void Update()
@@ -60,6 +74,5 @@ public class tree_statics : MonoBehaviour
             }
             delta -= tick;
         }
-
     }
 }
