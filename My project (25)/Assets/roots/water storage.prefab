@@ -29,15 +29,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1812497409201261623, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_LocalScale.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1812497409201261623, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.197731
+      value: 8.690473
       objectReference: {fileID: 0}
     - target: {fileID: 1812497409201261623, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.857514
+      value: 2.5642614
       objectReference: {fileID: 0}
     - target: {fileID: 1812497409201261623, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_LocalPosition.z
@@ -45,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1812497409201261623, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.77870214
+      value: 0.9372435
       objectReference: {fileID: 0}
     - target: {fileID: 1812497409201261623, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_LocalRotation.x
@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1812497409201261623, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.62739384
+      value: 0.3486756
       objectReference: {fileID: 0}
     - target: {fileID: 1812497409201261623, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -101,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3225379248229879611, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_SortingOrder
-      value: -22
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 5156926583278388625, guid: da1c79fc32b5b7748a6fa228e70aa077, type: 3}
       propertyPath: m_Enabled

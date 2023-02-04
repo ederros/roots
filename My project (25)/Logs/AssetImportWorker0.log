@@ -15,11 +15,11 @@ C:/Users/hp/Documents/GitHub/roots/My project (25)
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-7101
+18867
 Successfully changed project path to: C:/Users/hp/Documents/GitHub/roots/My project (25)
 C:/Users/hp/Documents/GitHub/roots/My project (25)
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 65.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.42f1 (7ade1201f527)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.42f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.42f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012864 seconds.
+Registered in 0.015259 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 58.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 56.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.006 seconds
+- Completed reload, in  1.196 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1007ms)
-		BeginReloadAssembly (207ms)
+	ReloadAssembly (1196ms)
+		BeginReloadAssembly (279ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (647ms)
-			LoadAssemblies (194ms)
+		EndReloadAssembly (725ms)
+			LoadAssemblies (261ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (193ms)
+			SetupTypeCache (226ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (234ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (254ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (58ms)
-				BeforeProcessingInitializeOnLoad (24ms)
-				ProcessInitializeOnLoadAttributes (107ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (27ms)
+				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015767 seconds.
+Registered in 0.014179 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.787 seconds
+- Completed reload, in  1.971 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1789ms)
-		BeginReloadAssembly (309ms)
+	ReloadAssembly (1973ms)
+		BeginReloadAssembly (339ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1336ms)
-			LoadAssemblies (276ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (1481ms)
+			LoadAssemblies (306ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (399ms)
+			SetupTypeCache (476ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (554ms)
+			SetupLoadedEditorAssemblies (614ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (194ms)
-				ProcessInitializeOnLoadAttributes (281ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (43ms)
+				BeforeProcessingInitializeOnLoad (208ms)
+				ProcessInitializeOnLoadAttributes (319ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (45ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1865 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 87.5 MB.
 System memory in use after: 87.6 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2306.
-Total: 3.842900 ms (FindLiveObjects: 0.215500 ms CreateObjectMapping: 0.055400 ms MarkObjects: 3.475600 ms  DeleteObjects: 0.094800 ms)
+Total: 3.726300 ms (FindLiveObjects: 0.187400 ms CreateObjectMapping: 0.046100 ms MarkObjects: 3.373700 ms  DeleteObjects: 0.117500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -146,54 +146,10 @@ UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityE
 
 [C:\build\output\unity\unity\Editor/Src/Animation/StateMachine.cpp line 1847]
 
- -> (artifact id: 'efc03b62b12c2e2c7460db335071e3f2') in 0.200584 seconds 
+ -> (artifact id: '1f1378e3f15befa81c8f85349408cbe4') in 0.227442 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/roots/water storage.prefab
-  artifactKey: Guid(b31fc95901563ea4c9c1e85cb871aa33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/roots/water storage.prefab using Guid(b31fc95901563ea4c9c1e85cb871aa33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'root': Transition 'AnyState -> idle' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\build\output\unity\unity\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: 'c64e2473bc6d569adad5e45b46a767ee') in 0.143638 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/roots/Spike.png
-  artifactKey: Guid(5fe659e34f14cf04c94647a09a8bbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/roots/Spike.png using Guid(5fe659e34f14cf04c94647a09a8bbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a678ea2e18d2e950e7af0778c6be4a') in 0.101940 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/roots/minerals storage.prefab
-  artifactKey: Guid(84f30990abdd68a4aa7aca301abd915a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/roots/minerals storage.prefab using Guid(84f30990abdd68a4aa7aca301abd915a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'root': Transition 'AnyState -> idle' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\build\output\unity\unity\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: 'ada495139fd4d97ae9fb6f80c293c470') in 0.116797 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
+  Time since last request: 0.000467 seconds.
   path: Assets/roots/root2.prefab
   artifactKey: Guid(b5f1c1a9cf68e404ba29ea99ed40ec09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/roots/root2.prefab using Guid(b5f1c1a9cf68e404ba29ea99ed40ec09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'root': Transition 'AnyState -> idle' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
@@ -209,29 +165,10 @@ UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityE
 
 [C:\build\output\unity\unity\Editor/Src/Animation/StateMachine.cpp line 1847]
 
- -> (artifact id: '718f78b8c5f90a62cf89c34ed1404bf9') in 0.071801 seconds 
+ -> (artifact id: 'f3a23535ff1e92872175ad8b3a3c38f5') in 0.080457 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/roots/nutrients storage.prefab
-  artifactKey: Guid(b1931be249d5415428ba7fe156b05820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/roots/nutrients storage.prefab using Guid(b1931be249d5415428ba7fe156b05820) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'root': Transition 'AnyState -> idle' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\build\output\unity\unity\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: '3ca1842c1c758d4da6f32972faec0c67') in 0.160733 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
+  Time since last request: 0.000259 seconds.
   path: Assets/roots/spine.prefab
   artifactKey: Guid(8740e9d9f84304f47aa51eca81a7853a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/roots/spine.prefab using Guid(8740e9d9f84304f47aa51eca81a7853a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'root': Transition 'AnyState -> idle' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
@@ -247,77 +184,52 @@ UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityE
 
 [C:\build\output\unity\unity\Editor/Src/Animation/StateMachine.cpp line 1847]
 
- -> (artifact id: '3385f198e94d5a175beb8ef08a2553ec') in 0.068106 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.052950 seconds.
-  path: Assets/roots/Spike.png
-  artifactKey: Guid(5fe659e34f14cf04c94647a09a8bbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/roots/Spike.png using Guid(5fe659e34f14cf04c94647a09a8bbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea24743a9067b3d2874d3ddbf536fe13') in 0.031626 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 41.402830 seconds.
-  path: Assets/roots/spine.prefab
-  artifactKey: Guid(8740e9d9f84304f47aa51eca81a7853a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/roots/spine.prefab using Guid(8740e9d9f84304f47aa51eca81a7853a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'root': Transition 'AnyState -> idle' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\build\output\unity\unity\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: 'c629aa5deccceac5f6b6eb144fc364f1') in 0.038679 seconds 
+ -> (artifact id: '15f20e813b31b4fa3669345a89b584fa') in 0.057255 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.015070 seconds.
+Registered in 0.015659 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.948 seconds
+- Completed reload, in  1.815 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1948ms)
-		BeginReloadAssembly (317ms)
+	ReloadAssembly (1816ms)
+		BeginReloadAssembly (320ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1472ms)
-			LoadAssemblies (324ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1332ms)
+			LoadAssemblies (340ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (460ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (599ms)
+			SetupTypeCache (413ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (508ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (210ms)
-				ProcessInitializeOnLoadAttributes (301ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (50ms)
+				BeforeProcessingInitializeOnLoad (177ms)
+				ProcessInitializeOnLoadAttributes (256ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (41ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1845 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 89.3 MB.
+System memory in use before: 89.2 MB.
 System memory in use after: 89.4 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2320.
-Total: 4.224200 ms (FindLiveObjects: 0.291100 ms CreateObjectMapping: 0.064800 ms MarkObjects: 3.834500 ms  DeleteObjects: 0.031300 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2317.
+Total: 4.155500 ms (FindLiveObjects: 0.201200 ms CreateObjectMapping: 0.046600 ms MarkObjects: 3.874300 ms  DeleteObjects: 0.032100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -329,4 +241,28 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1386.614443 seconds.
+  path: Assets/Leaf.png
+  artifactKey: Guid(91e9963bc270bdf438cffe6bf826e85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leaf.png using Guid(91e9963bc270bdf438cffe6bf826e85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b599077a52357e887f20119626e3b45') in 0.188928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/WaterDrop.png
+  artifactKey: Guid(577d235d79c35c14996dea55a24d9c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WaterDrop.png using Guid(577d235d79c35c14996dea55a24d9c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ee1f4f8a43f5ee650179b3bf59ddda') in 0.067107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/RootHeart.png
+  artifactKey: Guid(9a80360b0203f124dadd85dae2de644a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RootHeart.png using Guid(9a80360b0203f124dadd85dae2de644a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e52e12b6bde33a2dd96e92f5c1ddfa7') in 0.040831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.050966 seconds.
+  path: Assets/UI/RootHeart.png
+  artifactKey: Guid(9a80360b0203f124dadd85dae2de644a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/RootHeart.png using Guid(9a80360b0203f124dadd85dae2de644a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165e3d47edc984f4e65b539eee0c6479') in 0.034180 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
