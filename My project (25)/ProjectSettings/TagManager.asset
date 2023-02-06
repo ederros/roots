@@ -3,12 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - rootable
+  - fluid
+  - storage
+  - bug
+  - root
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - tree
   - Water
   - UI
   - 
@@ -38,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: on_floor
+    uniqueID: 3791952995
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

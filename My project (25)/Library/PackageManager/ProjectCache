@@ -5,7 +5,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638107126679209000
+=======
+      ticks: 638109464275604872
+>>>>>>> main
     m_Hash: 1328625551
   m_LockFileStatus:
     m_FilePath: "D:/\u041F\u0440\u043E\u0435\u043A\u0442\u044B/roots/My project (25)/Packages/packages-lock.json"
@@ -13,7 +17,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638107126679209000
+=======
+      ticks: 638109464275664878
+>>>>>>> main
     m_Hash: 3035840361
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
