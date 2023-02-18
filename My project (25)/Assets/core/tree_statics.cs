@@ -7,10 +7,11 @@ public static class statics
 {
     public static tree_statics Tree;
     public static spawner_hider last_root;
+   
 }
 public class tree_statics : MonoBehaviour
 {
-
+    public world_generator generator;
     public GameObject build_spawn_menu;
     public GameObject build_action_menu;
     public core_controller core;
@@ -32,7 +33,9 @@ public class tree_statics : MonoBehaviour
     public float build_time;
     public Animator build_anim;
     public float tick = 0.5f;
-    public float delta = 0;
+    public float water_consume = 0.1f;//water per second
+    public float water_consume_per_root = 0.01f;
+    float delta = 0;
     public GameObject game_over;
 
     public void show_vals()
@@ -56,12 +59,27 @@ public class tree_statics : MonoBehaviour
         statics.Tree.core.hp.bar = bar_hp;
         show_vals();
     }
+    void ap_quit()
+    {
+        Application.Quit();
+    }
+    public void tree_destroy()
+    {
+        Destroy(core.gameObject);
+        game_over.SetActive(true);
+        Invoke("ap_quit", 5);
+    }
     private void Update()
     {
         delta += Time.deltaTime;
         if (delta > tick)
         {
-            foreach(var s in water_storages)
+            if (core.water.sub(water_consume * tick))
+            {
+                tree_destroy();
+            }
+            core.nutritions.add(water_consume * tick * 0.5f);
+            foreach (var s in water_storages)
             {
                 s.stages_update(core.water.cur/ core.water.max);
             }

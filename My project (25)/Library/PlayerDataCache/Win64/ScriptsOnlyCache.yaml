@@ -1,12 +1,18 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DontDestroy
     - Hower_OverScale
+    - Menu_script
+    - SensitivitySlider
     - UI_Listener
+    - VolumeSlider
+    - background_controller
     - bug_controller
     - button_controller
     - camera_controller
     - core_controller
+    - damage_receiver
     - fluid_controller
     - object_controller
     - root_controller
@@ -55,7 +61,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/game.unity:
+    Assets/Options/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -69,6 +75,150 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1478}
+    - Class: 114
+      Script: {instanceID: 1698}
+    - Class: 114
+      Script: {instanceID: 1796}
+    - Class: 114
+      Script: {instanceID: 2136}
+    - Class: 114
+      Script: {instanceID: 2148}
+    - Class: 114
+      Script: {instanceID: 2442}
+    - Class: 114
+      Script: {instanceID: 2518}
+    - Class: 114
+      Script: {instanceID: 2654}
+    - Class: 114
+      Script: {instanceID: 2864}
+    - Class: 114
+      Script: {instanceID: 3080}
+    - Class: 114
+      Script: {instanceID: 3186}
+    - Class: 114
+      Script: {instanceID: 3220}
+    - Class: 114
+      Script: {instanceID: 4034}
+    - Class: 114
+      Script: {instanceID: 4362}
+    - Class: 114
+      Script: {instanceID: 4686}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    Assets/Options/Scene_Options.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1478}
+    - Class: 114
+      Script: {instanceID: 1698}
+    - Class: 114
+      Script: {instanceID: 2148}
+    - Class: 114
+      Script: {instanceID: 2442}
+    - Class: 114
+      Script: {instanceID: 2518}
+    - Class: 114
+      Script: {instanceID: 2654}
+    - Class: 114
+      Script: {instanceID: 2674}
+    - Class: 114
+      Script: {instanceID: 2864}
+    - Class: 114
+      Script: {instanceID: 3080}
+    - Class: 114
+      Script: {instanceID: 3186}
+    - Class: 114
+      Script: {instanceID: 3220}
+    - Class: 114
+      Script: {instanceID: 4034}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    Assets/Scenes/game.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
@@ -87,67 +237,65 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1474}
+      Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 1692}
+      Script: {instanceID: 1628}
     - Class: 114
-      Script: {instanceID: 1786}
+      Script: {instanceID: 1698}
     - Class: 114
-      Script: {instanceID: 1790}
+      Script: {instanceID: 1792}
     - Class: 114
-      Script: {instanceID: 1966}
+      Script: {instanceID: 1974}
     - Class: 114
-      Script: {instanceID: 2060}
+      Script: {instanceID: 2070}
     - Class: 114
-      Script: {instanceID: 2126}
+      Script: {instanceID: 2148}
     - Class: 114
-      Script: {instanceID: 2138}
+      Script: {instanceID: 2230}
     - Class: 114
-      Script: {instanceID: 2220}
+      Script: {instanceID: 2410}
     - Class: 114
-      Script: {instanceID: 2400}
+      Script: {instanceID: 2424}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 2518}
     - Class: 114
-      Script: {instanceID: 2506}
+      Script: {instanceID: 2654}
     - Class: 114
-      Script: {instanceID: 2642}
+      Script: {instanceID: 2864}
     - Class: 114
-      Script: {instanceID: 2850}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 3080}
     - Class: 114
-      Script: {instanceID: 3066}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 3076}
+      Script: {instanceID: 3186}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 3508}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3552}
     - Class: 114
-      Script: {instanceID: 3624}
+      Script: {instanceID: 3642}
     - Class: 114
-      Script: {instanceID: 3776}
+      Script: {instanceID: 3794}
     - Class: 114
-      Script: {instanceID: 3882}
+      Script: {instanceID: 3900}
     - Class: 114
-      Script: {instanceID: 4058}
+      Script: {instanceID: 4076}
     - Class: 114
-      Script: {instanceID: 4220}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 4344}
+      Script: {instanceID: 4432}
     - Class: 114
-      Script: {instanceID: 4414}
+      Script: {instanceID: 4586}
     - Class: 114
-      Script: {instanceID: 4568}
+      Script: {instanceID: 4694}
     - Class: 114
-      Script: {instanceID: 4668}
+      Script: {instanceID: 4702}
     - Class: 114
-      Script: {instanceID: 4676}
+      Script: {instanceID: 5052}
     - Class: 114
-      Script: {instanceID: 4684}
-    - Class: 114
-      Script: {instanceID: 5034}
+      Script: {instanceID: 16926}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -193,6 +341,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: background_controller
+  - hash:
+      serializedVersion: 2
       Hash: bcaee4c2a83047257b5f47d6ed264b75
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -235,7 +389,7 @@ ScriptsOnlyBuild:
     className: Bar
   - hash:
       serializedVersion: 2
-      Hash: 1e8ace4788d7262eea79b95e2c81a08f
+      Hash: 3f4cae59ccbdbf096d085f42630a4e86
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: spawner_hider
@@ -251,6 +405,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: spawner_controller
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: background_enlesser
   - hash:
       serializedVersion: 2
       Hash: 6d09add648996acd3e1b799256daf411
@@ -301,7 +461,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 1cff2f5238df08f362ba5300ef3cb404
+      Hash: 64921b53b0fe8ed4a89f937e70c90c34
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: camera_controller
@@ -311,6 +471,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UI_Listener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu_script
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -341,6 +507,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SensitivitySlider
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -451,6 +623,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DontDestroy
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -491,6 +669,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 50a75bd4a0b8ca9fa904be021e25a3de
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: damage_receiver
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -589,10 +773,10 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: ddc2d4d4b5fcf50d4e93c588a7e7d3a6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Script_Options
+    className: VolumeSlider
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -673,7 +857,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 8b86c0d4675c9e5790f63f7feb1642de
+      Hash: aba85618aecf5bd29a88bc38e1c3f313
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: bug_controller
@@ -685,13 +869,13 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 161a39841f51f8ef3ab045a670617e7e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: button_controller
   - hash:
       serializedVersion: 2
-      Hash: f4b1d10898712bea8fbfc105209e4d55
+      Hash: 824b408da26946261562cd49de035e21
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: tree_statics
@@ -733,5 +917,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   platform: 19
   scenePathNames:
+  - Assets/Options/Menu.unity
+  - Assets/Options/Scene_Options.unity
   - Assets/Scenes/game.unity
   playerPath: C:/Users/hp/Documents/gamejam/My project (25).exe

@@ -13,17 +13,21 @@ public class value
         float ret = max - cur - val;
         cur += val;
         if (cur > max) cur = max;
-        if (bar != null) bar.value = cur / max;
-        if (text != null) text.text = cur + "/" + max;
+        show_ui();
         return ret;
         
+    }
+
+    void show_ui()
+    {
+        if (bar != null) bar.value = cur / max;
+        if (text != null) text.text = Mathf.Round(cur*100)/100f+ "/" + max;
     }
     public bool sub(float val)
     {
         cur -= val;
         if (cur <= 0) cur = 0;
-        if (bar != null) bar.value = cur / max;
-        if (text != null) text.text = cur + "/" + max;
+        show_ui();
         if (cur == 0) return true;
         return false;
     }
@@ -37,9 +41,9 @@ public class value
 public class core_controller : MonoBehaviour
 {
     public value hp = new value(100,100);
-    public value water = new value(0, 100);
+    public value water = new value(100, 100);
     public value nutritions = new value(50, 100);
-    public value minerals = new value(0, 100);
+    public value minerals = new value(30, 100);
     private void Awake()
     {
     }

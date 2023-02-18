@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 2871015006920622739}
   - component: {fileID: 5702918132388900587}
   - component: {fileID: 6972756925172623019}
+  - component: {fileID: 4854643750265586890}
   m_Layer: 3
   m_Name: root
   m_TagString: root
@@ -200,7 +201,10 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  cost: 2.5
+  nutrition_cost: 2.5
+  minerals_cost: 0
+  water_cost: 0
+  hp: 5
 --- !u!95 &6972756925172623019
 Animator:
   serializedVersion: 3
@@ -220,3 +224,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4854643750265586890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691674299709288164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ea4caf7e79cb64a82f53a97c5fe1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 3225379248229879611}
+  receive_color: {r: 1, g: 0.20188677, b: 0.20188677, a: 1}
+  speed: 1

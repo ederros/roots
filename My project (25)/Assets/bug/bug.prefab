@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5332628974768533282}
   - component: {fileID: 5332628974768533283}
   - component: {fileID: 5332628974768533280}
+  - component: {fileID: 3834680994732978686}
   m_Layer: 0
   m_Name: bug
   m_TagString: bug
@@ -146,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  anim: {fileID: 5332628974768533280}
   min_step: 1
   max_step: 2
   sight_radius: 3
@@ -160,6 +162,7 @@ MonoBehaviour:
   attack_filter:
     serializedVersion: 2
     m_Bits: 8
+  my_pain: {fileID: 3834680994732978686}
 --- !u!50 &5332628974768533283
 Rigidbody2D:
   serializedVersion: 4
@@ -200,3 +203,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3834680994732978686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5332628974768533287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ea4caf7e79cb64a82f53a97c5fe1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 5332628974704420779}
+  receive_color: {r: 0.9433962, g: 0.24385896, b: 0.24385896, a: 1}
+  speed: 1

@@ -123,6 +123,101 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &3830179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3830181}
+  - component: {fileID: 3830180}
+  - component: {fileID: 3830182}
+  m_Layer: 0
+  m_Name: 696 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &3830180
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830179}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a4945bbbae284004b9489e9553946336, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -799100505
+  m_SortingLayer: -2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 075e12c2e09136045a1046da0765db66, type: 3}
+  m_Color: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.99916667, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &3830181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830179}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3830182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c0a4d19a5ac17429e3562dee95da08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8532353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -256,6 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb548b85274c63a48b719812006169cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost_string: 
 --- !u!114 &62340123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,7 +549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139955166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.056, y: 0.09, z: 0}
+  m_LocalPosition: {x: -0.056, y: 0.103, z: 0}
   m_LocalScale: {x: 0.14713247, y: 0.14713247, z: 0.14713247}
   m_Children: []
   m_Father: {fileID: 2082132268}
@@ -1056,6 +1152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb548b85274c63a48b719812006169cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost_string: 'cost: 2.5n'
 --- !u!114 &372348855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,6 +1573,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1503,6 +1601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c623bb0f63114447b2a4433f4506ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bc: {fileID: 3830182}
   minSize: 1
   maxSize: 10
   wheelSpeed: 10
@@ -1558,12 +1657,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.06, y: 0.35, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 3830181}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d4722d2f6a566438b10b811b1aad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &536034153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1710,6 +1822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb548b85274c63a48b719812006169cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost_string: 'cost: 2.5n'
 --- !u!114 &585430639 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6809190303978103773, guid: b8a1c0136f3d734489d64f17ac2d8a9f, type: 3}
@@ -2078,6 +2191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb548b85274c63a48b719812006169cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost_string: 'cost: 2.5n'
 --- !u!114 &872918499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,6 +2338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb548b85274c63a48b719812006169cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost_string: 'cost: 2.5n'
 --- !u!114 &920545991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2489,6 +2604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb548b85274c63a48b719812006169cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost_string: 'cost: 2.5n 5m'
 --- !u!114 &1020376527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2775,7 +2891,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0.0000071628033}
   m_SizeDelta: {x: 0, y: 188.85}
   m_Pivot: {x: 0, y: 1}
 --- !u!4 &1211042655 stripped
@@ -2979,7 +3095,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: build spine
+  m_Text: build spike
 --- !u!222 &1310001453
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3485,7 +3601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517570539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1852844, y: -0.58869714, z: -2.6945739}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4172,7 +4288,7 @@ MonoBehaviour:
   bugs:
   - {fileID: 5332628974768533287, guid: e6b8c3ac5a4082a4e87c69199fd28028, type: 3}
   obj_kol: 100
-  bug_kol: 0
+  bug_kol: 20
 --- !u!4 &1964221136
 Transform:
   m_ObjectHideFlags: 0
@@ -4210,7 +4326,7 @@ GameObject:
   - component: {fileID: 1980682064}
   - component: {fileID: 1980682063}
   m_Layer: 5
-  m_Name: Text
+  m_Name: game overer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4494,6 +4610,7 @@ GameObject:
   - component: {fileID: 2082132269}
   - component: {fileID: 2082132271}
   - component: {fileID: 2082132272}
+  - component: {fileID: 2082132273}
   m_Layer: 3
   m_Name: tree
   m_TagString: root
@@ -4564,6 +4681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d6ac6b0e5f35a4f9750f2ff2e0094a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  generator: {fileID: 1964221135}
   build_spawn_menu: {fileID: 287808137}
   build_action_menu: {fileID: 1752913864}
   core: {fileID: 2082132270}
@@ -4593,7 +4711,8 @@ MonoBehaviour:
   build_time: 5
   build_anim: {fileID: 0}
   tick: 0.5
-  delta: 0
+  water_consume: 0.1
+  water_consume_per_root: 0.001
   game_over: {fileID: 1980682061}
 --- !u!114 &2082132272
 MonoBehaviour:
@@ -4623,8 +4742,25 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  cost: 0
+  nutrition_cost: 0
+  minerals_cost: 0
+  water_cost: 0
   hp: 5
+--- !u!114 &2082132273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082132267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ea4caf7e79cb64a82f53a97c5fe1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 139955168}
+  receive_color: {r: 0.9528302, g: 0.47102168, b: 0.47102168, a: 1}
+  speed: 1
 --- !u!1 &2110972581
 GameObject:
   m_ObjectHideFlags: 0

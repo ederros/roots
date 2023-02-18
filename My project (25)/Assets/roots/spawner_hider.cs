@@ -9,7 +9,7 @@ public class spawner_hider : MonoBehaviour
     public bool is_blocked = true;
     public ContactFilter2D filter;
     Vector2 box_pos, box_size;
-    public float cost;
+    public float nutrition_cost, minerals_cost, water_cost;
     float box_angle;
     public float hp = 5;
     void Start()
@@ -49,6 +49,7 @@ public class spawner_hider : MonoBehaviour
     void activate()
     {
         is_blocked = false;
+        statics.Tree.water_consume += statics.Tree.water_consume_per_root;
         if (gameObject.name.Contains("root"))
         {
             statics.Tree.core.water.max += 1;
@@ -84,6 +85,7 @@ public class spawner_hider : MonoBehaviour
     }
     private void OnDestroy()
     {
+        statics.Tree.water_consume -= statics.Tree.water_consume_per_root;
         if (gameObject.name.Contains("root"))
         {
             

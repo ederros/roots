@@ -1,15 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class button_controller : MonoBehaviour
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+public class button_controller : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-
+    Text text;
+    string main_text;
+    public string cost_string;
     void Start()
     {
-
+        text = transform.GetChild(0).GetComponent<Text>();
+        main_text = text.text;
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        text.text = cost_string;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        text.text = main_text;
+    }
     public void click_to_root()
     {
         scrollbar_controller sc = statics.Tree.build_spawn_menu.transform.GetChild(0).GetComponent<scrollbar_controller>();
@@ -20,8 +33,10 @@ public class button_controller : MonoBehaviour
 
     bool buy_building(spawner_hider rc)
     {
-        if (rc.cost > statics.Tree.core.nutritions.cur) return false;
-        statics.Tree.core.nutritions.sub(rc.cost);
+        if (rc.nutrition_cost > statics.Tree.core.nutritions.cur|| rc.minerals_cost > statics.Tree.core.minerals.cur|| rc.water_cost > statics.Tree.core.water.cur) return false;
+        statics.Tree.core.nutritions.sub(rc.nutrition_cost);
+        statics.Tree.core.minerals.sub(rc.minerals_cost);
+        statics.Tree.core.water.sub(rc.water_cost);
         return true;
     }
 
@@ -56,12 +71,18 @@ public class button_controller : MonoBehaviour
     {
         build_building(3);
     }
+    private void OnEnable()
+    {
+        if (text == null) return;
+        text.text = main_text;
+    }
     public static void destroy(GameObject target)
     {
         
         GameObject G_obj = Instantiate(statics.Tree.spawner_prefab, target.transform.parent);
         G_obj.transform.position = target.transform.position;
         G_obj.transform.rotation = target.transform.rotation;
+        G_obj.transform.position -= Vector3.forward;
         target.transform.parent.GetComponent<spawner_hider>().spawners.Add(G_obj);
         G_obj.SetActive(false);
         statics.Tree.build_action_menu.SetActive(false);
